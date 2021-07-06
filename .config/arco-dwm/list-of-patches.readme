@@ -1,0 +1,21 @@
+* DWM
+dwm-alphasystray
+dwm-autostart
+dwm-center
+- Add an iscentered rule to automatically center clients on the current monitor.
+dwm-r1615-selfstart
+dwm-cyclelayouts
+dwm-shiftview
+dwm-fullgaps
+dwm-gridmode (#include "layouts.c" above layouts to work, gaps does not work in this layout)
+# Mine
+dwm-viewontag
+dwm-pertag
+dwm-centermaster      - config.h muss ergänzt werden
+dwm-movestack         - config.h muss ergänzt werden.
+dwm-fakefullscreen    - 3 Zeilen aus dwm.c löschen
+dwm-scratchpad        - config.h muss ergänzt werden.
+dwm-alwayscenter
+dwm-keychain
+
+

@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Org-Index"
+ (filename . "~/Org/zettelkasten/index.org")
+ (front-context-string . "e\n- [ ] Frank an")
+ (rear-context-string . "\n- [ ] Telefonat")
+ (position . 235))
+("org-capture-last-stored"
+ (filename . "~/Org/zettelkasten/20210508211952-python_virtual_enviroment.org")
+ (front-context-string . "#+TITLE: Python ")
+ (rear-context-string)
+ (position . 1))
+)

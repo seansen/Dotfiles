@@ -1,0 +1,13 @@
+;; -*- emacs-lisp -*- <21/05/09 12:55:50 /home/sean/Coding/elisp/Semacs/tramp>
+;; Tramp connection history.  Don't change this file.
+;; Run `M-x tramp-cleanup-all-connections' instead.
+
+(((tramp-file-name "sftp" "ubuntu" nil "192.168.188.39" nil nil nil)
+  ("gio-tool" t)
+  ("default-location" "/home/ubuntu")
+  ("uid-integer" 1000)
+  ("gid-integer" 1000)
+  ("uid-string" "ubuntu")
+  ("gid-string" "1000")
+  ("prefix" "/")
+  ("case-insensitive" nil)))

@@ -1,0 +1,60 @@
+;;; -*- coding: utf-8 -*-
+(("/home/sean/.config/arco-dwm/config.def.h" . 8759)
+ ("/home/sean/config.def.h" . 2942)
+ ("/home/sean/.elfeed/index" . 630)
+ ("/home/sean/.config/emacs/Semacs/.local/cache/recentf" . 2109)
+ ("/home/sean/"
+  (dired-filename . "/home/sean/config.def.h"))
+ ("/dev/disk/"
+  (dired-filename . "/dev/disk/.."))
+ ("/"
+  (dired-filename . "/mnt"))
+ ("/mnt/"
+  (dired-filename . "/mnt/.."))
+ ("/dev/"
+  (dired-filename . "/dev/.."))
+ ("/home/"
+  (dired-filename . "/home/.."))
+ ("/home/sean/.config/"
+  (dired-filename . "/home/sean/.config/.."))
+ ("/home/sean/Org/zettelkasten/20210218070822-linux_dotfiles.org" . 712)
+ ("/home/sean/.config/zsh/.zshrc" . 1071)
+ ("/home/sean/Org/zettelkasten/20201205061613-manual_linux.org" . 16)
+ ("/home/sean/Org/zettelkasten/20210209083102-kontakt_sebastian_tuch.org" . 9755)
+ ("/home/sean/Org/zettelkasten/20210512084143-linux_dwm.org" . 15353)
+ ("/home/sean/Org/zettelkasten/20200512230753-coding.org" . 742)
+ ("/home/sean/Org/zettelkasten/20200519160627-linux_wie_compield_man_programme.org" . 190)
+ ("/home/sean/Org/zettelkasten/20201216080603-manual_bash.org" . 3443)
+ ("/home/sean/Org/zettelkasten/20210216125449-manual_python.org" . 760)
+ ("/home/sean/Downloads/"
+  (dired-filename . "/home/sean/Downloads/.."))
+ ("/home/sean/Org/zettelkasten/"
+  (dired-filename . "/home/sean/Org/zettelkasten/20210218070822-linux_dotfiles.org"))
+ ("/usr/share/emacs/27.2/lisp/menu-bar.el.gz" . 60516)
+ ("/home/sean/Org/zettelkasten/20210508211602-python_web_scraping.org" . 30)
+ ("/home/sean/Org/zettelkasten/20201215123257-manual_computer.org" . 278)
+ ("/home/sean/Org/zettelkasten/20210412223106-emacs_dired.org" . 46)
+ ("/home/sean/Org/zettelkasten/20210104124950-fremdworter.org" . 324)
+ ("/home/sean/Org/zettelkasten/20210401101045-manual_datenbanken.org" . 676)
+ ("/home/sean/Org/zettelkasten/20210503090740-linux_rsync.org" . 243)
+ ("/home/sean/Org/zettelkasten/20210414113436-linux_libsecret.org" . 260)
+ ("/home/sean/Org/zettelkasten/index.org" . 178)
+ ("/home/sean/Org/zettelkasten/20210425200034-linux_server.org" . 241)
+ ("/home/sean/Org/zettelkasten/20200517072133-manual_git.org" . 238)
+ ("/home/sean/Org/zettelkasten/20210508211952-python_virtual_enviroment.org" . 1752)
+ ("/home/sean/Org/zettelkasten/20210305095842-manual_steem.org" . 148)
+ ("/home/sean/Org/zettelkasten/20201205073825-manual_lisp.org" . 271)
+ ("/sftp:ubuntu@192.168.188.39:/home/ubuntu/Steem/"
+  (dired-filename . "/sftp:ubuntu@192.168.188.39:/home/ubuntu/Steem/000-start-script.bash"))
+ ("/sftp:ubuntu@192.168.188.39:/home/ubuntu/"
+  (dired-filename . "/sftp:ubuntu@192.168.188.39:/home/ubuntu/Steem"))
+ ("/sftp:ubuntu@192.168.188.39:/home/ubuntu/Steem/000-postloader.py" . 6052)
+ ("/sftp:ubuntu@192.168.188.39:/home/ubuntu/Steem/067-lotto-otto-lottery-de.py" . 5237)
+ ("/home/sean/.bashrc" . 94)
+ ("/sftp:ubuntu@192.168.188.39:/home/ubuntu/.screenrc" . 355)
+ ("/home/sean/Org/org-export/config.html" . 572069)
+ ("/home/sean/Org/"
+  (dired-filename . "/home/sean/Org/.."))
+ ("/home/sean/Org/org-export/"
+  (dired-filename . "/home/sean/Org/org-export/config.html"))
+ ("/sftp:ubuntu@192.168.188.39:/" . 10))

@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Emcas1--MyInit"
+ (filename . "~/.emacs.d/myinit.org")
+ (front-context-string . "** [#B] Auto-Dim")
+ (rear-context-string . "BD = SPC s a)=\n\n")
+ (position . 20028))
+)

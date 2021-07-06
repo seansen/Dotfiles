@@ -1,0 +1,62 @@
+#+TITLE: Manual Shell
+#+AUTHOR: Sean Averhoff
+#+CREATED: [2021-05-30 So 23:01]
+#+LAST_MODIFIED: [2021-05-30 So 23:01]
+#+STARTUP: OVERVIEW
+#+ROAM_ALIAS:
+#+ROAM_TAGS:
+#+SETUPFILE: ~/Semacs/straight/repos/org-exsty/styles-html/retro_dark.theme 
+ 
+* Introduction
+Dieses Dokument
+
+* Bash Befehle
+| Befe* Shell 
+- Braucht keine Dateiendung
+- #!/bin/bash
+- chmod 744
+
+** Einfache Ausgabe mit =echo=
+#+begin_src sh
+
+#!/bin/bash
+echo "hello"
+
+#+end_src
+
+** Variablen
+#+begin_src sh
+
+#!/bin/bash
+x="Ich kann fliegen"
+echo $x
+
+#+end_src
+
+** Variablen zusammenfassen
+#+begin_src sh
+
+x=42
+y=2
+z=$(($x+$y))
+echo $z
+
+#+end_src
+
+** Variablen mit Floot => Python
+#+begin_src sh
+
+x=42.5
+y=2
+
+z=$(python -c "print($x+$y)")
+
+echo=$z
+
+#+end_src
+
+** Variablen mit Floot
+#+begin_src sh
+
+
+#+end_src
