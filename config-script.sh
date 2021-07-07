@@ -50,8 +50,8 @@ echo "################################################################## "
   cp -r ~/Dotfiles/.config/zsh ~/.dotfiles/.config/zsh
   ln -sf ~/.dotfiles/.config/zsh ~/.config
 
-  rm -rf ~/.bashrc
-  cp -r ~/Dotfiles/.bashrc ~/.bashrc
+  #rm -rf ~/.bashrc
+  #cp -r ~/Dotfiles/.bashrc ~/.bashrc
   
 ##################################################################################################################
 echo
@@ -81,4 +81,4 @@ echo "################################################################## "
 echo "Phase 4 : "
 echo "Install Repositorys"
 echo "################################################################## "
-yay -S xwallpaper
+pacman -S xwallpaper neovim

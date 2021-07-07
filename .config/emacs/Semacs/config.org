@@ -209,7 +209,7 @@ Ensure that package.el is configured correctly.
 #+begin_src emacs-lisp
 (setq package-enable-at-startup nil)
 ;(setq package-user-dir (concat semacs-local-dir "elpa/"))
-(setq package-user-dir "~/Coding/elisp/Semacs/.local/elpa/")
+(setq package-user-dir "~/.dotfiles/.config/emacs/Semacs/.local/elpa/")
 
 (require 'package)
 
@@ -1963,7 +1963,7 @@ The Windows clipboard could be in a wider encoding than utf-8.
   :config
     ;(setq yas-snippet-dirs (concat semacs-emacs-dir "snippets"))
     ;(setq yas-snippet-dirs (expand-file-name "snippets" semacs-emacs-dir))
-    (setq yas-snippet-dirs '("~/Coding/elisp/Semacs/snippets"))
+    (setq yas-snippet-dirs '("~/.dotfiles/.config/emacs/Semacs/snippets"))
     (yas-global-mode 1)
     (use-package yasnippet-snippets)
     (yas-reload-all))

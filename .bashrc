@@ -255,7 +255,9 @@ ex ()
 
 # reporting tools - install when not installed
 # install neofetch
-neofetch
+#neofetch
+source .zprofile
+exec zsh
 # install screenfetch
 #screenfetch
 # install ufetch-git

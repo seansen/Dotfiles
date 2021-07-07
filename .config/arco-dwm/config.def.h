@@ -18,7 +18,7 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#6790EB";
+static const char col_cyan[]        = "#222222";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -105,7 +105,7 @@ static Key keys[] = {
     { MODKEY,                      -1,  XK_t,      spawn,          {.v = termcmd } },
     { MODKEY|ShiftMask,            -1,  XK_t,      spawn,          SHCMD("cool-retro-term") },
     { MODKEY,                      -1,  XK_b,      spawn,          {.v = firefoxcmd } },
-    { MODKEY|ShiftMask,            -1,  XK_w,      spawn,          SHCMD("~/.dotfiles/.loacl/suckless-scripts/dwm_setbg ~/.local/share/wallpapers") },
+    { MODKEY|ShiftMask,            -1,  XK_w,      spawn,          SHCMD("~/.dotfiles/.loacl/suckless-scripts/dwm_setbg ~/.dotfiles/.local/wallpapers") },
     { MODKEY|ShiftMask,            -1,  XK_i,      spawn,          SHCMD("sxiv -t  ~/.dotfiles/.local/wallpapers") },
     /* Nautilus */
     { MODKEY,                      -1,  XK_f,      spawn,          SHCMD("thunar") },
