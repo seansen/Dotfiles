@@ -81,4 +81,4 @@ echo "################################################################## "
 echo "Phase 4 : "
 echo "Install Repositorys"
 echo "################################################################## "
-pacman -S xwallpaper neovim
+sudo pacman -S xwallpaper neovim exa
