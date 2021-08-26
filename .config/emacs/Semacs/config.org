@@ -5,7 +5,6 @@
 #+STARTUP: OVERVIEW
 #+ROAM_ALIAS:
 #+ROAM_TAGS:
-#+Setupfile: ~/Coding/elisp/Semacs/straight/repos/org-exsty/styles-html/readtheorg_inline.theme
 
 * Initialize-Settings
 ** Semacs-Version
@@ -717,9 +716,13 @@ There are many modes that are not centered about text-manipulation.
   "o n" #'org-add-note
   "o i" #'org-toggle-inline-images
   "o t" #'org-insert-structure-template
+  "o L" #'org-insert-link
+  "o l" #'org-store-link
 )
 
 #+end_src
+
+#+RESULTS:
 
 *** Project
 #+begin_src emacs-lisp
@@ -739,16 +742,17 @@ There are many modes that are not centered about text-manipulation.
  :states 'normal
   "r" '(:ignore t :which-key "roam")
   "r r" #'org-roam
-  "r f" #'org-roam-find-file
+  "r f" #'org-roam-node-find
   "r g" #'org-roam-graph
-  "r i" #'org-roam-insert
-  "r m" #'org-roam-insert-immediate
+  "r i" #'org-roam-node-insert
+  "r m" #'org-roam-capture
   "r l" #'org-insert-link
   "r c" #'org-cliplink
+  "r d" #'org-roam-dailies-capture-today
   "r n" #'saa/rename-current-buffer-file
   "r u" '(org-roam-unlinked-references :which-key "Unlineked Refernces")
   "r p" '(saa/visit-roam-zettelkasten :which-key "Roam Index")
-  "r b" '(org-roam-switch-to-buffer :which-key "Roam Buffer")
+  "r b" '(org-roam-buffer-toggle :which-key "Roam Buffer")
   "r t" '(org-roam-buffer-toggle-display :which-key "Maximze Buffer")
 )
 
@@ -1152,12 +1156,12 @@ Continue wrapped words at whitespace, rather than in the middle of a word.
 
 *** Bufler
 [[https://github.com/alphapapa/bufler.el][Bufler]] is like a butler for your buffers, presenting them to you in an organized way based on your instructions.
-#+begin_src emacs-lisp
+!#+begin_src emacs-lisp
 (use-package bufler)
 (add-to-list 'evil-emacs-state-modes 'bufler-mode)
 (add-to-list 'evil-emacs-state-modes 'bufler-tabs-mode)
 (add-to-list 'evil-emacs-state-modes 'bufler-list-mode)
-#+end_src
+!#+end_src
 
 *** Buffer-Flip
 [[https://github.com/killdash9/buffer-flip.el][Buffer-Flip]] makes it possible to switch between recent buffers, with an emphasis on minimizing keystrokes.
@@ -1950,7 +1954,7 @@ The Windows clipboard could be in a wider encoding than utf-8.
 #+begin_src emacs-lisp
 (setq save-abbrevs 'silent)        ;; save abbrevs when files are saved
 (setq-default abbrev-mode t)
-(load "~/Coding/elisp/Semacs/snippets/semacs-abbrev.el")
+(load "~/.config/emacs/Semacs/snippets/semacs-abbrev.el")
 
 #+end_src
 
@@ -2251,6 +2255,16 @@ Convert the current buffer's content from markdown to orgmode format and save it
         ("\\.pdf\\'" . default)
         (auto-mode . emacs)))
 #+end_src
+
+*** Org-Pandoc-Import
+#+begin_src emacs-lisp
+(use-package org-pandoc-import
+  :straight (:host github
+             :repo "tecosaur/org-pandoc-import"
+             :files ("*.el" "filters" "preprocessors")))
+#+end_src
+
+#+RESULTS:
 
 ** Remote-Settings
 *** Tramp
@@ -2678,17 +2692,17 @@ Activate the global version when we load Emacs(Problems with modeline)
 (package-initialize)
 (when (eq system-type 'gnu/linux)
 (setq user-org-directory (concat (getenv "HOME") "/Org/"))
-(setq org_notes (expand-file-name "zettelkasten/" user-org-directory))
-(setq org_agenda (expand-file-name "zettelkasten/task.org" user-org-directory))
-(setq org_bib (expand-file-name "zettelkasten/bibnotes.org" user-org-directory))
-(setq org_export (expand-file-name "zettelkasten/org-export/" user-org-directory))
-(setq zot_bib (expand-file-name "zettelkasten/MeineBibliothek.bib" user-org-directory))
+(setq org_notes (expand-file-name "Zettelkasten/" user-org-directory))
+(setq org_agenda (expand-file-name "Zettelkasten/task.org" user-org-directory))
+(setq org_bib (expand-file-name "Zettelkasten/bibnotes.org" user-org-directory))
+(setq org_export (expand-file-name "Zettelkasten/org-export/" user-org-directory))
+(setq zot_bib (expand-file-name "Zettelkasten/MeineBibliothek.bib" user-org-directory))
 )
 
 ;Quickly visit Zettelkasten
 (defun saa/visit-roam-zettelkasten ()
   (interactive)
-  (find-file "~/Org/zettelkasten/index.org"))
+  (find-file "~/Org/Zettelkasten/index.org"))
 
 ;Org-Settings
 (use-package org
@@ -2704,6 +2718,8 @@ Activate the global version when we load Emacs(Problems with modeline)
     (setq org-cycle-separator-lines 0)             ;Structure the collapsed view
     (setq org-support-shift-select t)
     (setq org-agenda-start-with-log-mode t)
+    (setq org-hide-block-startup nil)
+    (setq org-startup-folded "fold")
     (setq org-log-into-drawer t)
     (setq org-ellipsis " ")
     (setq org-startup-indented t)                  ;Indent according to section
@@ -2754,6 +2770,8 @@ Activate the global version when we load Emacs(Problems with modeline)
   '(org-tag ((t (:inherit (shadow fixed-pitch) :weight bold :height 1.0))))
   '(org-verbatim ((t (:inherit (shadow fixed-pitch))))))
 #+end_src
+
+#+RESULTS:
 
 *** Org-Appear
 #+begin_src emacs-lisp
@@ -2883,50 +2901,72 @@ Yank source code into your org files, manually surrounding it in #+BEGIN_SRC blo
 *** Org-Roam
 #+begin_src emacs-lisp
 (use-package org-roam
-  :hook
-    (after-init . org-roam-mode)
-  :custom
-    (org-roam-db-location "~/Org/zettelkasten/org-roam.db")
-    (org-roam-directory "~/Org/zettelkasten")
-    (benchmark 1 '(org-roam-db-build-cache))
-    (org-roam-buffer-position 'right)
-    (org-roam-buffer-width 0.3)
-    (org-roam-index-file "index.org")
-    (org-roam-verbose nil)  ; https://youtu.be/fn4jIlFwuLU
-    (org-roam-buffer-no-delete-other-windows t) ; make org-roam buffer sticky
-    (org-roam-title-change-hook '(org-roam--update-links-on-title-change))
-    (org-roam-db-update-method 'immediate)
-    (setq org-roam-dailies-directory "daily/")
-    (setq org-roam-dailies-directory "~/Org/daily/")
-    (org-roam-buffer-window-parameters '((no-delete-other-windows . t))
-    (org-roam-completion-everywhere t)
-    (org-roam-completion-system)
-    (cond ((featurep! :completion helm) 'helm)
-          ((featurep! :completion ivy) 'ivy)
-          ((featurep! :completion ido) 'ido)
-           ('default)))
-    (defvar +org-roam-open-buffer-on-find-file t
-      "If non-nil, open the org-roam buffer when opening an org roam file.")
-;; Normally, the org-roam buffer doesn't open until you explicitly call
-;; `org-roam'. If `+org-roam-open-buffer-on-find-file' is non-nil, the
-;; org-roam buffer will be opened for you when you use `org-roam-find-file'
-;; (but not `find-file', to limit the scope of this behavior).
-   (add-hook 'find-file-hook
-     (defun +org-roam-open-buffer-maybe-h ()
-     (and +org-roam-open-buffer-on-find-file
-       (memq 'org-roam-buffer--update-maybe post-command-hook)
-       (not (window-parameter nil 'window-side)) ; don't proc for popups
-       (not (eq 'visible (org-roam-buffer--visibility)))
-       (with-current-buffer (window-buffer)
-       (org-roam-buffer--get-create)))))
+      :init
+      (setq org-roam-v2-ack t)
+      :custom
+      ;(org-roam-directory "~/org-roam/")
+      (org-roam-directory "~/Org/Zettelkasten/")
+      (org-id-locations-file "~/Org/Zettelkasten/.orgids")
+      (org-roam-completion-everywhere t)
+      (org-roam-capture-templates
+      '(("d" "default" plain "%?"
+         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+author: Sean Averhoff\n#+roam_key:\n#+created: %<%Y-%m-%d>\n#+startup: OVERVIEW\n")
+         :unnarrowed t)
 
+        ("t" "Time Note" plain "%?"
+         :if-new (file+head "fleeting/%(my/initiate-org-roam-time-note).org"
+                            "#+TITLE: %(eval my/*time-note-last-time*)--${title}
 
-)
+[[tsl:%(eval my/*time-note-last-time*)]]
 
+")
+         :unnarrowed t)
+
+        ("l" "Literature Note" plain "%?"
+         :if-new (file+head "${slug}.org"
+                            "#+TITLE: ${title}
+,#+ROAM_KEY: ${ref}")
+         :unnarrowed t)
+         ("l" "programming" plain
+          "* Characteristics\n\n- Family: %?\n"
+         :if-new (file+head "%<%Y%m%d%H%M%S> -${slug}.org"
+                            "#+title: ${title}\n")
+         :unnarrowed t)))
+
+      :config
+      (org-roam-setup)
+      (org-roam-db-autosync-mode)
+      ;; If using org-roam-protocol
+      (require 'org-roam-protocol))
+
+;(setq org-roam-mode-section-functions
+;      (list #'org-roam-backlinks-section
+;            #'org-roam-reflinks-section
+;            #'org-roam-unlinked-references-section
+;            ))
+
+;(add-to-list 'display-buffer-alist
+;             '("\\*org-roam\\*"
+;               (display-buffer-in-direction)
+;               (direction . right)
+;               (window-width . 0.33)
+;               (window-height . fit-window-to-buffer)))
+
+(setq org-roam-dailies-directory "~/Org/Zettelkasten/daily/")
+
+(setq org-roam-dailies-capture-templates
+      '(("d" "default" entry
+         "* %?"
+         :if-new (file+head "%<%Y-%m-%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))))
 #+end_src
 
+#+RESULTS:
+| d | default | entry | * %? | :if-new | (file+head %<%Y-%m-%d>.org #+title: %<%Y-%m-%d> |
+
 *** Org-Roam-Templates
-#+begin_src emacs-lisp
+!#+begin_src emacs-lisp
    (setq org-roam-capture-templates
   '(
    ("d" "default" plain (function org-roam--capture-get-point)
@@ -2986,10 +3026,10 @@ Yank source code into your org files, manually surrounding it in #+BEGIN_SRC blo
     (define-key org-roam-bibtex-mode-map (kbd "C-c n a") #'orb-note-actions)
 )
 
-#+end_src
+!#+end_src
 
 *** Org-Roam-Server
-#+begin_src emacs-lisp
+!#+begin_src emacs-lisp
 (use-package org-roam-server
   :after org-roam
   :config
@@ -3007,16 +3047,16 @@ Yank source code into your org files, manually surrounding it in #+BEGIN_SRC blo
     (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))
 
 
-#+end_src
+!#+end_src
 *** Org-Nroam
-#+begin_src emacs-lisp
+!#+begin_src emacs-lisp
 (use-package nroam
   :straight '(nroam :host github
                     :branch "master"
                     :repo "NicolasPetton/nroam")
   :config
   (add-hook 'org-mode-hook #'nroam-setup-maybe))
-#+end_src
+!#+end_src
 
 *** Org-Roam-Block
 #+begin_src emacs-lisp
