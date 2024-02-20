@@ -1,0 +1,24 @@
+(undo-tree-save-format-version . 1)
+"278c85bc7a01641f1e3d326491cc2adcaf45fcde"
+[nil nil nil nil (25592 41486 613990 537000) 0 nil]
+([nil nil ((nil rear-nonsticky nil 250 . 251) (#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t src-block t font-lock-multiline t face (org-block) fontified nil)) . -389) (250 . 390) (t 25581 52501 0 0)) nil (25592 41486 613988 837000) 0 nil])
+([nil nil ((#("
+(setq undo-limit 80000000                          ;Raise undo-limit to 80Mb
+      evil-want-fine-undo t )                      ;Be more granular
+" 0 1 (fontified t) 1 2 (fontified t face (rainbow-delimiters-depth-1-face)) 2 6 (fontified t face font-lock-keyword-face) 6 52 (fontified t) 52 53 (fontified t face font-lock-comment-delimiter-face) 53 78 (fontified t face font-lock-comment-face) 78 106 (fontified t) 106 107 (fontified t face (rainbow-delimiters-depth-1-face)) 107 129 (fontified t) 129 130 (fontified t face font-lock-comment-delimiter-face) 130 147 (fontified t face font-lock-comment-face)) . 102) (undo-tree-id21 . -78) (undo-tree-id22 . -1) (undo-tree-id23 . -146) (undo-tree-id24 . -78) (undo-tree-id25 . -78)) nil (25592 41486 613987 37000) 0 nil])
+([nil nil ((#(";******************************************
+; UNDO-LIMIT
+;******************************************
+
+" 0 1 (fontified t face font-lock-comment-delimiter-face) 1 44 (fontified t face font-lock-comment-face) 44 46 (fontified t face font-lock-comment-delimiter-face) 46 57 (fontified t face font-lock-comment-face) 57 58 (fontified t face font-lock-comment-delimiter-face) 58 101 (fontified t face font-lock-comment-face) 101 102 (fontified t)) . 1) (undo-tree-id14 . -101) (undo-tree-id15 . -101) (undo-tree-id16 . -101) (undo-tree-id17 . -102) (undo-tree-id18 . -101) (undo-tree-id19 . -101) (undo-tree-id20 . -101) 102) nil (25592 41486 613982 137000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 140) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (#("
+" 0 1 (fontified t)) . 140) (undo-tree-id13 . -1)) nil (25592 41486 613975 437000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 140) (undo-tree-id9 . -1)) nil (25592 41486 613970 937000) 0 nil])
+([nil nil ((#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t src-block t fontified t)) . -137) (undo-tree-id7 . -1) (undo-tree-id8 . -1) 138) nil (25592 41486 613968 137000) 0 nil])
+([nil current ((#("
+" 0 1 (rear-nonsticky t fontified t)) . 1) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . 1) (undo-tree-id4 . -1) (undo-tree-id5 . 1) (undo-tree-id6 . -1)) nil (25592 41486 613961 137000) 0 nil])
+nil

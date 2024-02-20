@@ -1,0 +1,23 @@
+;;; -*- coding: utf-8; mode: lisp-data -*-
+(("/home/sean/Org/Zettelkasten/recurrent.org" . 866)
+ ("/home/sean/Org/Zettelkasten/contacts.org" . 173)
+ ("/home/sean/Org/Zettelkasten/todo.org" . 7088)
+ ("/home/sean/Org/Zettelkasten/20230221203157-settingsemacs.org" . 71569)
+ ("/home/sean/Org/Zettelkasten/20230223093559-americanfootballschulkonzept.org" . 2003)
+ ("/home/sean/Org/Zettelkasten/20220508180659-isb_tuch_x.org" . 47347)
+ ("/home/sean/.elfeed/index" . 630)
+ ("/home/sean/Org/Zettelkasten/20220306135316-emacs_manual.org" . 70)
+ ("/home/sean/Org/Zettelkasten/20220303075857-js_manual.org" . 6067)
+ ("/home/sean/.dotfiles/emacs/.config/emacs/Semacs/Se/config.org" . 497)
+ ("/home/sean/Org/Zettelkasten/20220501010529-microsoft.org" . 1589)
+ ("/home/sean/Org/Zettelkasten/20230216222618-remotedesktop.org" . 540)
+ ("/mnt/c/Users/averh/OneDrive/Home-Sean/Org/references.bib" . 166)
+ ("/home/sean/.config/"
+  (dired-filename . "/home/sean/.config/emacs"))
+ ("/home/sean/.config/emacs/"
+  (dired-filename . "/home/sean/.config/emacs/Semacs"))
+ ("/home/sean/.config/emacs/Semacs/"
+  (dired-filename . "/home/sean/.config/emacs/Semacs/Se"))
+ ("/home/sean/.config/emacs/Semacs/Se/"
+  (dired-filename . "/home/sean/.config/emacs/Semacs/Se/config.org"))
+ ("/home/sean/mnt" . 2))

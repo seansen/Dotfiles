@@ -1,0 +1,1 @@
+("/mnt/c/Users/Seb/OneDrive/Home-Sean/Org/" "~/.dotfiles/")

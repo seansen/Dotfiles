@@ -1,0 +1,24 @@
+(undo-tree-save-format-version . 1)
+"cc54caa89cf4bc948ef9a9050c1b7acb22dcf421"
+[nil nil nil nil (25593 29647 467145 617000) 0 nil]
+([nil nil ((514 . 515) (t 25581 52500 0 0) 514) nil (25593 29647 467143 917000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 515 . 516) (#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t src-block t font-lock-multiline t face (org-block) fontified nil)) . -1151) (515 . 1152)) nil (25593 29647 467141 917000) 0 nil])
+([nil nil ((#("(minibuffer-depth-indicate-mode)
+" 0 1 (fontified t face (rainbow-delimiters-depth-1-face)) 1 31 (fontified t) 31 32 (fontified t face (rainbow-delimiters-depth-1-face)) 32 33 (fontified t)) . 481) (undo-tree-id14 . -33) (undo-tree-id15 . -32) 484) nil (25593 29647 467139 517000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 983 . 984) (#("
+" 0 1 (fontified nil)) . -1016) (983 . 1017)) nil (25593 29647 467135 17000) 0 nil])
+([nil nil ((1016 . 1017) 984) nil (25593 29647 467133 17000) 0 nil])
+([nil nil ((984 . 986)) nil (25593 29647 467131 617000) 0 nil])
+([nil nil ((985 . 987) (#("  " 0 2 (fontified nil)) . 984) (undo-tree-id13 . -2) (986 . 987)) nil (25593 29647 467130 17000) 0 nil])
+([nil nil ((984 . 986)) nil (25593 29647 467126 717000) 0 nil])
+([nil nil ((986 . 989)) nil (25593 29647 467124 917000) 0 nil])
+([nil nil ((#("(display-time-mode 1)                                      ;Enable time in the mode-line
+(display-battery-mode 1)                                   ;It's nice to know how much power you have
+(setq display-time-24hr-format t)                          ;24h format
+(setq display-time-day-and-date t)                         ;Display time and date
+(setq column-number-mode t)                                ;Toggle automatic display of the current line number or column number
+
+" 0 1 (fontified t face (rainbow-delimiters-depth-1-face)) 1 20 (fontified t) 20 21 (fontified t face (rainbow-delimiters-depth-1-face)) 21 59 (fontified t) 59 60 (fontified t face font-lock-comment-delimiter-face) 60 89 (fontified t face font-lock-comment-face) 89 90 (fontified t face (rainbow-delimiters-depth-1-face)) 90 112 (fontified t) 112 113 (fontified t face (rainbow-delimiters-depth-1-face)) 113 148 (fontified t) 148 149 (fontified t face font-lock-comment-delimiter-face) 149 191 (fontified t face font-lock-comment-face) 191 192 (fontified t face (rainbow-delimiters-depth-1-face)) 192 196 (fontified t face font-lock-keyword-face) 196 223 (fontified t) 223 224 (fontified t face (rainbow-delimiters-depth-1-face)) 224 250 (fontified t) 250 251 (fontified t face font-lock-comment-delimiter-face) 251 262 (fontified t face font-lock-comment-face) 262 263 (fontified t face (rainbow-delimiters-depth-1-face)) 263 267 (fontified t face font-lock-keyword-face) 267 295 (fontified t) 295 296 (fontified t face (rainbow-delimiters-depth-1-face)) 296 321 (fontified t) 321 322 (fontified t face font-lock-comment-delimiter-face) 322 344 (fontified t face font-lock-comment-face) 344 345 (fontified t face (rainbow-delimiters-depth-1-face)) 345 349 (fontified t face font-lock-keyword-face) 349 370 (fontified t) 370 371 (fontified t face (rainbow-delimiters-depth-1-face)) 371 403 (fontified t) 403 404 (fontified t face font-lock-comment-delimiter-face) 404 473 (fontified t face font-lock-comment-face) 473 474 (fontified t)) . 8) (undo-tree-id0 . -344) (undo-tree-id1 . -473) (undo-tree-id2 . -344) (undo-tree-id3 . -344) (undo-tree-id4 . -89) (undo-tree-id5 . 1) (undo-tree-id6 . -473) (undo-tree-id7 . -473) (undo-tree-id8 . -473) (undo-tree-id9 . 474) (undo-tree-id10 . -1) (undo-tree-id11 . 454) (undo-tree-id12 . -21)) nil (25593 29647 467120 517000) 0 nil])
+([nil current ((#(" " 0 1 (fontified t face font-lock-comment-delimiter-face)) . 514) (686 . 687)) nil (25593 29647 467006 317000) 0 nil])
+nil

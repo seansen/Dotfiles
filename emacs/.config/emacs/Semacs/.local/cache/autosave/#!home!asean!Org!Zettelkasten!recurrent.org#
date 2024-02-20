@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       f2d288f9-0565-47a9-9009-cced151f67e8
+:END:
+#+title: §Recurrent
+#+author: Sean Averhoff
+#+filetags: :project:recurrent:
+#+created: 2022-04-04
+#+startup: OVERVIEW
+
+* Überweisungen :noexport:
+:PROPERTIES:
+:ID:       47616812-a110-40ad-b153-7f962e39d1c3
+:END:
+** TODO Miete Wohnung 1500€
+DEADLINE: <2023-0-30 Thu +1m>
+:PROPERTIES:
+:LAST_REPEAT: [2022-04-30 Sat 20:05]
+:END:
+:LOGBOOK:
+- State "DONE"       from "PROG"       [2022-04-30 Sat 20:05]
+- State "DONE"       from "NOTINUSE"   [2022-04-01 Fri 11:17]
+:END:
+
+** TODO [[id:13f50b56-8ea7-4fc6-a23c-56c8d1e88f90][Kamil Hertwig]] 36€ im Jahr für Netflix
+SCHEDULED: <2023-05-01 Mon +1y>
+:PROPERTIES:
+:LAST_REPEAT: [2022-04-30 Sat 20:04]
+:END:
+:LOGBOOK:
+- State "DONE"       from "PROG"       [2022-04-30 Sat 20:04]
+- State "DONE"       from "NOTINUSE"   [2022-04-01 Fri 13:25]
+:END:
+* Wohnung

@@ -1,0 +1,17 @@
+(undo-tree-save-format-version . 1)
+"dab74e1d16d4c5c3ea31c60f3916796179284f61"
+[nil nil nil nil (25593 29831 352763 238000) 0 nil]
+([nil nil ((4382 . 4383) (t 25581 52500 0 0) 4382) nil (25593 29831 352761 538000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4383 . 4384) (#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary fontified nil)) . -6197) (4383 . 6198)) nil (25593 29831 352758 838000) 0 nil])
+([nil nil ((#("
+** Mini-Buffer
+#+begin_src emacs-lisp
+" 0 1 (fontified t rear-nonsticky t) 1 2 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary fontified t) 2 3 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary fontified t) 3 4 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary fontified t) 4 15 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary fontified t) 15 16 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t) 16 38 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t) 38 39 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t)) . 4383) (undo-tree-id9 . -16) (undo-tree-id10 . -16) (undo-tree-id11 . -39) (undo-tree-id12 . -39) (undo-tree-id13 . -1) (undo-tree-id14 . -38)) nil (25593 29831 352756 238000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 4382) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1)) nil (25593 29831 352746 438000) 0 nil])
+([nil nil ((#("#+end_src
+" 0 9 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t) 9 10 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t)) . 6147) (undo-tree-id3 . -10) (undo-tree-id4 . -10) (undo-tree-id5 . -9)) nil (25593 29831 352737 538000) 0 nil])
+([nil current ((#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t src-block t org-fold--spec-org-fold-outline--229370396570073271 org-fold-outline fontified t)) . 6146) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1)) nil (25593 29831 352716 438000) 0 nil])
+nil

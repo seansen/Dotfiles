@@ -1,1 +1,0 @@
-("~/Org/zettelkasten/" "~/.config/emacs/" "~/.config/arco-dwm/" "~/.emacs.d/")

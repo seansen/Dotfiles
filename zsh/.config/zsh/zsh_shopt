@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Shopt for ZSH: Add alias to .zshrc
+# No cd necessary when opening folders or directorys via terminal
+
+args='';
+for item in $@
+  do
+    args="$args $item";
+  done
+shopt $args;

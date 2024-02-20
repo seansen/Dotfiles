@@ -1,0 +1,22 @@
+#+Title: Semacs Readme
+#+Author:
+* Structur
+** Core
+*** core.el
+*** core-editor.el
+- File handling => backups
+- Clipboard
+- Formating
+- Smart Parens
+*** core-keybindings
+*** core-modules
+*** core-packages
+*** core-ui.el
+*** core-cli
+** Modules
+** Themes
+** Config
+* Fehler
+** PHP
+** React
+** Anzeige Sec. in Modeleiste

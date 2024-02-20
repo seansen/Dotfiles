@@ -1,0 +1,24 @@
+(undo-tree-save-format-version . 1)
+"8766ba0fa72ce8b35fc48e7dcbe904ad3810cb3a"
+[nil nil nil nil (25593 29230 642463 232000) 0 nil]
+([nil nil ((159 . 160) (t 25581 52500 0 0) 132) nil (25593 29230 642461 332000) 0 nil])
+([nil nil ((160 . 166)) nil (25593 29230 642459 532000) 0 nil])
+([nil nil ((170 . 171) (#("k" 0 1 (fontified t face font-lock-comment-face)) . -170) (undo-tree-id2 . -1) (169 . 171) (#("k" 0 1 (fontified t face font-lock-comment-face)) . -169) (undo-tree-id3 . -1) (166 . 170)) nil (25593 29230 642457 532000) 0 nil])
+([nil nil ((#("k" 0 1 (fontified nil face font-lock-comment-face)) . -169) (undo-tree-id0 . -1) (#("k" 0 1 (fontified t face font-lock-comment-face)) . -170) (undo-tree-id1 . -1) 171) nil (25593 29230 642450 932000) 0 nil])
+([nil nil ((169 . 171)) nil (25593 29230 642189 232000) 0 nil])
+([nil nil ((4911 . 4912) 4911) nil (25593 29230 642187 932000) 0 nil])
+([nil nil ((4912 . 4915)) nil (25593 29230 642186 432000) 0 nil])
+([nil nil ((4915 . 4916)) nil (25593 29230 642185 432000) 0 nil])
+([nil nil ((4915 . 4920)) nil (25593 29230 642183 132000) 0 nil])
+([nil nil ((4920 . 4921)) nil (25593 29230 642175 532000) 0 nil])
+([nil nil ((4921 . 4922) (t 25593 29230 666405 835000) 4921) nil (25593 29339 354101 216000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4922 . 4923) (#("
+" 0 1 (isearch-open-invisible org-fold-core--isearch-show isearch-open-invisible-temporary org-fold-core--isearch-show-temporary font-lock-fontified t src-block t font-lock-multiline t face (org-block) fontified nil)) . -4992) (4922 . 4993)) nil (25593 29339 354098 816000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t rear-nonsticky t)) . 4922) (undo-tree-id4 . -1)) nil (25593 29339 354093 216000) 0 nil])
+([nil nil ((4911 . 4912) (t 25593 29339 356414 716000) 4911) nil (25593 29358 48532 411000) 0 nil])
+([nil nil ((4912 . 4914)) nil (25593 29358 48530 111000) 0 nil])
+([nil nil ((4925 . 4926)) nil (25593 29358 48527 211000) 0 nil])
+([nil current ((#("
+" 0 1 (fontified t)) . -4654) (undo-tree-id5 . -1) (undo-tree-id6 . -1) 4655) nil (25593 29358 48520 111000) 0 nil])
+nil

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: test block
+# key: <test
+# --
+#+BEGIN_SRC ${1:$$(yas-auto-next (yas-completing-read "Language: " (mapcar 'car sea-babel-load-languages))) }
+$0
+#+END_SRC

@@ -1,0 +1,35 @@
+;;; -*- coding: utf-8; mode: lisp-data -*-
+(("/home/sean/Org/Zettelkasten/todo.org" . 7597)
+ ("/home/sean/.config/Semacs2/"
+  (dired-filename . "/home/sean/.config/Semacs2/config.org"))
+ ("/home/sean/.config/Semacs2/config.org" . 30728)
+ ("/home/sean/.config/Semacs/straight/build/org-bars/org-bars-autoloads.el" . 274)
+ ("/home/sean/Org/Zettelkasten/20220317181407-org_manual.org" . 20241)
+ ("/home/sean/Org/Zettelkasten/20220508180659-isb_tuch_x.org" . 24468)
+ ("/home/sean/Org/Zettelkasten/20220313212558-linux.org" . 4577)
+ ("/home/sean/Org/Zettelkasten/diary.org" . 150)
+ ("/home/sean/Org/Zettelkasten/"
+  (dired-filename . "/home/sean/Org/Zettelkasten/20220501010529-microsoft.org"))
+ ("/home/sean/Org/Zettelkasten/20220501010529-microsoft.org" . 1297)
+ ("/home/sean/.config/Semacs/"
+  (dired-filename . "/home/sean/.config/Semacs/.."))
+ ("/home/sean/.config/"
+  (dired-filename . "/home/sean/.config/Semacs2"))
+ ("/home/sean/.config/Semacs/straight/build/org-transclusion/org-transclusion-autoloads.el" . 5033)
+ ("/home/sean/.config/Semacs/straight/build/org-roam-ui/org-roam-ui-autoloads.el" . 3633)
+ ("/home/sean/.elfeed/index" . 630)
+ ("/home/sean/.config/Semacs/modules/"
+  (dired-filename . "/home/sean/.config/Semacs/modules/org_feauters.el"))
+ ("/home/sean/.config/Semacs/config/"
+  (dired-filename . "/home/sean/.config/Semacs/config/.."))
+ ("/home/sean/.config/Semacs/core/core-packages.el" . 1208)
+ ("/home/sean/.config/Semacs/core/core-modules.el" . 6050)
+ ("/home/sean/.config/Semacs/core/"
+  (dired-filename . "/home/sean/.config/Semacs/core/core-keybinds.el"))
+ ("/home/sean/.config/Semacs/core/core-keybinds.el" . 8036)
+ ("/home/sean/.config/Semacs/core/core.el" . 5914)
+ ("/home/sean/.config/Semacs/straight/build/tex-smart-umlauts/tex-smart-umlauts-autoloads.el" . 2115)
+ ("/home/sean/.config/Semacs/straight/build/ace-jump-mode/ace-jump-mode-autoloads.el" . 1550)
+ ("/home/sean/.config/Semacs/straight/build/magit/magit-autoloads.el" . 88390)
+ ("/home/sean/.config/Semacs/straight/build/git-commit/git-commit-autoloads.el" . 618)
+ ("/home/sean/.config/Semacs/straight/build/with-editor/with-editor-autoloads.el" . 3776))
